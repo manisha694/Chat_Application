@@ -20,8 +20,10 @@ app.use(express.json({ limit: '50mb' }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: [
+      "http://localhost:5173",
+      "https://chat-application-8ws8.onrender.com"
+    ],
     credentials: true,
   })
 );

@@ -22,12 +22,12 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
+      "https://chat-application-ecru-two.vercel.app",
       "https://chat-application-8ws8.onrender.com"
     ],
     credentials: true,
   })
 );
-
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
